@@ -1,0 +1,233 @@
+body {
+  background: url("https://image.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 5px;
+  margin: 0;
+}
+ul li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+* {
+  font-family: cursive;
+}
+p {
+  font-size: 140%;
+  margin-left: 5px;
+}
+table,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-left: 5px;
+}
+/* ########################################### */
+
+.navigation {
+  width: 100%;
+  height: 53px;
+  background-color: rgba(69, 39, 243, 0.5);
+  padding: 0;
+  margin: 0;
+}
+.navigation .a {
+  list-style: none;
+  display: inline;
+}
+.navigation .a li {
+  float: left;
+  margin-left: 15px;
+  font-size: 20px;
+  color: #fff;
+  line-height: 53px;
+}
+.navigation .a li a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.clock {
+  font-size: 25px;
+  color: #fff;
+}
+
+a:hover {
+  color: red;
+}
+#cat {
+  font-size: 36px;
+  float: right;
+}
+#cat1 {
+  font-size: 36px;
+  float: left;
+}
+.secondNav {
+  display: none;
+}
+.lessonContentSecondNav {
+  width: 110px;
+  display: none;
+}
+.lessonContentFirstNav {
+  display: none;
+  background-color: rgba(69, 39, 243, 0.5);
+  position: absolute;
+}
+.lessonContentFirstNav ul li a {
+}
+.search {
+  float: right;
+  line-height: 53px;
+}
+#searchContent {
+  font-size: 20px;
+}
+
+/* /////////////////// end of nav ///////////// */
+
+.larg {
+  color: red;
+
+  font-size: 100%;
+}
+
+/* //////////////////////////// Table ////////////////// */
+
+.table1 {
+  border: 1px solid black;
+  text-align: center;
+  width: 300px;
+}
+.td1 {
+  border: 1px solid black;
+  padding: 5px;
+  color: white;
+}
+.th1 {
+  background-color: gray;
+}
+.table2 {
+  border: 1px solid gray;
+  text-align: center;
+  width: 40%;
+}
+
+.th2 {
+  background-color: #c3c1c1;
+}
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+/* //////////////////////////// line header ///////////////////////// */
+#myheader {
+  color: white;
+  font-size: 300%;
+  background-color: green;
+  text-align: center;
+  padding: 30px;
+}
+
+.title {
+  background-color: navy;
+  font-size: 200%;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.import {
+  color: red;
+  font-size: 150%;
+}
+
+.floating {
+  float: right;
+}
+
+#nav {
+  border: 1px solid gray;
+  background-color: white;
+  width: 15%;
+  font-family: Tahoma;
+  font-size: 14px;
+  margin-top: 3px;
+  border-radius: 50px 20px;
+}
+#image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+  .firstNav {
+    display: none;
+  }
+  .secondNav {
+    direction: rtl;
+    display: block;
+    height: 48px;
+    background-color: rgba(3, 50, 58, 0.5);
+  }
+  .navContent {
+    background-color: rgba(3, 50, 58, 0.5);
+    color: wheat;
+    width: 30%;
+    direction: ltr;
+    display: none;
+    margin-top: 4px;
+    position: absolute;
+  }
+  .navContent li {
+    margin-top: 30px;
+  }
+  .search2 {
+    font-size: 15px;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .search2 {
+    font-size: 15px;
+    width: 70%;
+  }
+  .navContent li {
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 638px) {
+  .search2 {
+    font-size: 15px;
+    width: 55%;
+  }
+}
+@media only screen and (max-width: 420px) {
+  body {
+    width: 100%;
+  }
+  .search2 {
+    font-size: 15px;
+    width: 65%;
+  }
+  .navContent {
+    background-color: rgba(3, 50, 58, 0.5);
+    color: wheat;
+    width: 50%;
+    direction: ltr;
+    display: none;
+    margin-top: 4px;
+    position: absolute;
+  }
+}

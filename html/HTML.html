@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style sheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/3a77e5261f.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <title>first web site</title>
+</head>
+
+<body>
+    <i class='fas fa-chess-queen' style='font-size:40px;color:gold'></i>
+    <i style="font-size:200% ; color:white"><strong> SOLO LEARN</strong></i>
+    <h2 id="day" style="color: white;"></h2>
+    <div class="clock">
+        <span id="date" style="margin-right: 20px;"></span>
+        <span id="Clock"></span>
+    </div>
+    <div class="firstNav">
+        <nav class="navigation">
+            <ul>
+                <div class="search">
+                    <li>
+                        <input type="text" placeholder="Search.." name="search" id="searchContent">
+                        <button type="search"><i class="fa fa-search fa-2x"></i></button>
+                    </li>
+                </div>
+                <div class="a">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About me</a>
+                    </li>
+                    <li>
+                        <a href="#" id="lessonFirstNav">Lessons</a>
+                        <div class="lessonContentFirstNav">
+                            <ul>
+                                <li><a>HTML</a></li>
+                                <li><a>CSS</a></li>
+                                <li><a>Java Script</a></li>
+                                <li><a>jquery</a></li>
+                                <li><a>Bootstrap</a></li>
+                            </ul>
+                        </div>
+                    </li>
+            </ul>
+    </div>
+    </nav>
+    </div>
+    <div class="secondNav">
+        <button id="Click"><i class="fas fa-bars fa-3x"></i></button>
+        <div class="navContent">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="">About me</a>
+                    </li>
+                    <li>
+                        <a href="#" id="lesson">Lessons <i class="fas fa-sort-down"></i>
+                        </a>
+                        <div class="lessonContentSecondNav">
+                            <ul>
+                                <li><a href="#">HTML</a></li>
+                                <li><a>CSS</a></li>
+                                <li><a>Java Script</a></li>
+                                <li><a>jquery</a></li>
+                                <li><a>Bootstrap</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="Search.." name="search" class="search2">
+                        <button type="search"><i class="fa fa-search"></i></button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('#Click').click(function () {
+                var ShowHide = $('.navContent')
+                ShowHide.toggle();
+                ShowHide.animate({ up: 300 }, 4000);
+
+            })
+            $("#lesson").click(function () {
+                $(".lessonContentSecondNav").toggle()
+
+            });
+
+        });  
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#lessonFirstNav").click(function () {
+                $(".lessonContentFirstNav").toggle()
+            });
+        });
+
+    </script>
+
+    <div style="width:100%; height: 80px;">
+        <i class='fas fa-cat' id="cat1"></i>
+        <i class='fas fa-cat' id="cat"></i>
+    </div>
+
+    <p style="text-align:center; font-size: 30px;"><strong>Welcome To HTML Tutorial</strong> </p>
+
+    <p style="text-align: center;"> <b>HTML</b> stands for <strong style="color:red">H</strong>yper
+        <strong style="color:red">T</strong>ext <strong style="color:red">M</strong>arkup <strong
+            style="color:red">L</strong>anguage.</p>
+
+    <p> The head of an html file contains all of the non-visual elements that help make a page work </p>
+    <img src="https://u01.appmifile.com/images/2018/04/18/f3bbc620-750e-4184-bdca-3f440a172a11.jpg" alt="html"
+        class="floating" width="20%">
+
+    <ol>
+        <li class="import"> <span class="import"><i>html</i></span> </li>
+        <li class="import"> <span class="import"><i>head</i></span></li>
+        <li class="import"> <span class="import"><i>title</i></span></li>
+        <li class="import"> <span class="import"><i>body</i></span></li>
+    </ol>
+    <ul>
+        <li>
+            <h2>Attributes</h2>
+        </li>
+    </ul>
+
+    <p>Learn about attributes by using this <a href="https://www.w3schools.com/html/html_attributes.asp"
+            target="_blank">link</a></p>
+
+    <div class="title" style="text-align: center;">BODY</div>
+
+    <p><b>Head,paragraphs,list,quotes,images and links</b> are just a few of the elements that can be contained within
+        the body tag.</p>
+
+    <header>
+
+        <ul>
+            <li>
+                <h3> <i><span style="color:#E91E63">&lt;P&gt;</span></i> Element </h3>
+            </li>
+        </ul>
+    </header>
+    <p>To cread a paragraph , simply type in the (p) element. </p>
+    <p>For more study use this <a href="https://www.w3schools.com/html/html_paragraphs.asp"> link</a></p>
+    <hr />
+
+
+    <ul>
+        <li>
+            <h2>Formating elements</h2>
+        </li>
+    </ul>
+    <img src="https://www.computerhope.com/issues/pictures/html.jpg" alrt="html" width="30%" class="floating">
+    <p>There is a list of elements that specify text style.</p>
+    <ol>
+        <li>(b) bold text</li>
+        <li>big text</li>
+        <li>(i) italic text</li>
+        <li>small text</li>
+        <li>strong text</li>
+        <li>(del) deleted text</li>
+        <li>mark</li>
+        <li>ins</li>
+    </ol>
+    <ul>
+        <h3>
+            <li>HTML HEADING:</li>
+        </h3>
+    </ul>
+    <p>Html includes <ins>six</ins> levels of headings which are ranked according to importance </p>
+    <p class="larg"><i>h1-h2-h3-h4-h5-h6</i></p>
+    <hr />
+    <ul>
+        <li>
+            <h3>The <span style="color:#E91E63">&lt;a&gt;</span> tag</h3>
+        </li>
+        <a href="https://www.realmadrid.com/en"><img
+                src="https://i.pinimg.com/originals/d1/59/2f/d1592fe6070abdc7d4586e03bafea400.jpg" class="floating"
+                width="100px"></a>
+
+    </ul>
+    <p>You can add links to the text or images that will enable the user to click on them.</p>
+    <a href="https://www.w3schools.com/html/html_images.asp">html</a>
+    <ul>
+        <li>
+            <h4>Html ordered list</h4>
+        </li>
+    </ul>
+    <p>Html ordered list used for list item </p>
+    <p>Ordered html list - attribute type:</p>
+    <p class="import">1,A,a,i,I</p>
+    <h3><span class="import"> &lt;Table&gt;</span> <b>element</b></h3>
+    <p>Tables are divided into table rows and with (tr) and table data with (td) and (th), Attribute for table is
+        Colspan that used to expand a cell for two or more cells.</P>
+    <!--table -->
+    <table class="table1">
+
+        <tr class="th1">
+            <th>color</th>
+            <th>number</th>
+        </tr>
+        <tr class="td1">
+            <td style="background-color: blue;">blue</td>
+            <td style="background-color:blue;">#0b00d4</td>
+        </tr>
+        <tr class="td1">
+            <td style="background-color: #3abd3f;">green</td>
+            <td style="background-color: #3abd3f;">#17f306</td>
+        </tr>
+        <tr class="td1">
+            <td style="background-color: red;">red</td>
+            <td style="background-color: red;">#f30606</td>
+        </tr>
+    </table>
+    <p><b>background-color</b> is used to change the color of a cell.</p>
+    <p>For more expmel click on <a href="https://www.w3schools.com/html/html_tables.asp"> Table </a> link.</p>
+    <hr />
+    <ul>
+        <li>
+            <h3>Type of elements</h3>
+            <img src="https://blog.4psa.com/wp-content/uploads/block-inline1.png" width="30%" class="floating">
+        </li>
+    </ul>
+    <p>In Html, most elemets are defined as <i class="import">block level & inline</i> elemets. </p>
+    <p><i class="import">block level</i> elements start from a new line</p>
+    <p>For example: h1,form,li,ul,ol,p,pre,table
+        ,div,etc.</p>
+    <p><i class="import">inline</i> elements are normally displyed without line breaks.</p>
+    <p>For example:b,a,strong,
+        img,input,em,span,etc.</p>
+
+    <!-- //////forms///// -->
+
+    <ul>
+        <li>
+            <h3>The <span style="color:#E91E63">&lt;form&gt;</span> elements</h3>
+        </li>
+    </ul>
+    <div style="display: block;">
+        <p>Html forms are used to collect information from the user.</p>
+        <p><span class="import">&lt;input&gt;</span> elements has many variations depending on the type attribute. it
+            can be a :</p>
+        <p style="color:green">text,password,radio,URL,submit,date,
+            email,search,week,and etc.</p>
+    </div>
+    <ul>
+        <li>
+            <h4>For example</h4>
+        </li>
+    </ul>
+    <form>
+        <fieldset style="width:50px">
+            <legend>personal information</legend>
+            username:<br />
+            <input type="text" name="username" placeholder="username"> <br /> password:
+            <br />
+            <input type="password" name="password" placeholder="password"> <br /> <br />
+            <input type="submit" name="submit">
+        </fieldset>
+    </form>
+    <hr width="70%" />
+    <ul>
+        <li>
+            <h3>The <span class="import">&lt;select&gt;</span> element</h3>
+        </li>
+    </ul>
+    <p>The select element defines a drop-down list:</p>
+    <form>
+        <strong>select your own car below:</strong><br /><br />
+        <select name="car" style="width:100px" id="caarrss">
+            <option value="BMW">BMW</option>
+            <option value="Audi">Audi</option>
+            <option value="Renault">Renault</option>
+            <option value="kia" selected>kia</option>
+        </select><br /><br />
+        <button>Submit</button>
+
+    </form>
+    <hr width="70%" />
+    <ul>
+        <li>
+            <h3>The <span class="import">&lt;textarea&gt;</span> element</h3>
+        </li>
+    </ul>
+    <p>The <span class="import">rows</span> attribute specifies the visible number of lines in a text area.</p>
+    <p>The <span class="import">cols</span> attribute specifies the visible width of a text area.</p>
+    <form>
+        <textarea rows="8" cols="11"></textarea><br /><br />
+        <input type="submit" value="send">
+    </form>
+    <hr width="70%" />
+    <ul>
+        <li>
+            <h3>The <span class="import">&lt;datalist&gt;</span> element</h3>
+        </li>
+    </ul>
+    <p>The <span class="import">datalist</span> element specifies a list of pre-defined options for an <span
+            class="import ">input</span> element.</p>
+    <form>
+        <input list="browser" placeholder="Browser">
+        <datalist id="browser">
+            <option value="explorer">
+            <option value="firefox">
+            <option value="opera">
+            <option value="chrome" selected>
+        </datalist>
+        <input type="submit" value="submit">
+    </form>
+    <hr width="70%">
+    <form>
+        <p>select your favorite color</p>
+        <input type="color" name="favcolor" value="#af0501">
+        <input type="submit" value="submit">
+    </form>
+    <hr width="70%" />
+    <form>
+        <p>shelect your birthday:</p>
+        <input type="date" name="birthdate" value:birthday>
+        <input type="submit" name="submit">
+    </form>
+    <hr width="70%" />
+    <p>If we change the input type to radio it allows the user select only one of a number of choices.</p>
+    <form>
+        <input type="radio" name="gender" value="male" checked>male<br />
+        <input type="radio" name="gender" value="female" />femal
+    </form>
+    <hr width="70%" />
+    <p>If we change the input type to checkbox allows the user to select more than one
+    <form>
+        <input type="checkbox" name="HTML" checked> HTML<br />
+        <input type="checkbox" name="CSS"> CSS
+    </form>
+    <hr width="70%">
+    <p>The submit button submites a form to its action attribute.</p>
+    <form>
+        <input type="submit" value="submit">
+    </form>
+    <ul>
+        <li>
+            <h3><span class="import">&lt;button&gt;</span> tag</h3>
+        </li>
+    </ul>
+    <div>
+        <p id="changing">click me to change me</p>
+        <button type="button" onclick="myFunction()">click me</button>
+        <script>
+            function myFunction() {
+                document.getElementById("changing ").innerHTML = "you can change me with javascript anytime you want "
+            }
+        </script>
+    </div>
+    <br />
+    <button onclick="alert( 'Hello')">Say Hello</button>
+    <h1 id="myheader">HTML 5</h1>
+    <article text-align="center">
+        <aside style="text-align:left">
+            <h2>HTML 5 page structure:</h2>
+        </aside>
+        <img src="https://api.sololearn.com/DownloadFile?id=2471" aler="html" width="60%">
+    </article>
+    <H3>New elemets in html5 are:</h3>
+    <p class="import">article,aside,audio,video, footer,header,nav,output
+        ,progress,section and even more!</p>
+    <ul>
+        <li>
+            <h3>The <b class="import">&lt;Nav&gt;</b> Element</h3>
+        </li>
+    </ul>
+    <p>This tag represents asection of a page that links to other pages or to certain sections within the page.</p>
+    <ul>
+        <li>
+            <h4>For Example</h4>
+        </li>
+    </ul>
+    <ul>
+        <li><a href="https://www.sololearn.com/Profile/16887900/HTML/">home</a></li>
+        <li><a
+                href="https://tt.linkedin.com/in/saeed-dogani-83921a169?trk=org-employees_profile-result-card_result-card_full-click ">about
+                me</a></li>
+    </ul>
+    <ul>
+        <li>
+            <h3>The <b class="import">&lt;article&gt;</b> element</h3>
+        </li>
+    </ul>
+    <p>the <span class="import">article</span> element replace the <span class="import">div</span> element that was
+        widely used in HTML4,along with an id or class.</p>
+    <ul>
+        <li>
+            <h3>Audio on the web</h3>
+        </li>
+    </ul>
+    <p>There are tow different ways to specify the audio source file's URL. The first uses the source attribute.</p>
+    <p>The second way uses the <span class="import ">source</span> element insde the <span class="import"> audio </span>
+        element</p>
+    <audio src="./uploads/audio.mp3" controls>
+        Audio element not supported by your browser
+    </audio>
+    <ul>
+        <li>
+            <h3>video in HTML</h3>
+        </li>
+    </ul>
+    <p>The video is similar to audio element you can specify the viodeo source URL using an attribute in a video
+        element, or using source element inside the video element</p>
+    <ul>
+        <li>
+            <h3>Attributes of<span class="import"> &lt;video&gt;</span> element</h3>
+        </li>
+    </ul>
+    <p><span class="import"> controls , autoplay , loop </span>attributes.</p>
+    <p>The <span class="import">controls</span> attributes adds video controls, like play, pause, and volume.</p>
+    <p>There are three supported video format for the video element:</p>
+    <h5><i>MP4,webM and OGG</i></h5>
+    <video width="250 " controls>
+        <source src="movie.mp4" ; type="video/mp4">
+        <source src="movie.ogg" ; type="video/ogg">
+    </video>
+    <hr />
+
+    <ul>
+        <li>
+            <h2>Migration from HTML4 to HTML5</h2>
+        </li>
+    </ul>
+    <table class="table2" style="text-align: center;">
+        <caption><strong>html 4 to 5</strong></caption>
+        <tr class="th2">
+            <th>typical HTML4</th>
+            <th>typical HTML5 </th>
+        </tr>
+        <tr class="th2">
+            <td>div id="header "</td>
+            <td> header</td>
+        </tr>
+        <tr class="th2">
+            <td>div id="menu "</td>
+            <td>nav</td>
+        </tr>
+        <tr class="th2">
+            <td>div id="content "</td>
+            <td>section</td>
+        </tr>
+        <tr class="th2">
+            <td>div class="article "</td>
+            <td>article</td>
+        </tr>
+        <tr class="th2">
+            <td>div id="footer "</td>
+            <td>footer</td>
+        </tr>
+    </table>
+    <ul>
+        <li>
+            <h3>Html <span class="import">&lt;progress&gt;</span> tag</h3>
+        </li>
+    </ul>
+    <p>The <span class="import">progress</span> tag represents the progress of a task.<br />and attributes for progress
+        are
+        <span class="import">value</span> and <span class="import">Max</span>.</p>
+    <ul>
+        <li>
+            <h4>For example</h4>
+        </li>
+    </ul>
+    <p>downloading in progress:</p>
+    <progress value="20" max="100"></progress>
+    <hr />
+    <ul>
+        <li>
+            <h3>The <span class="import" ;>&lt;object&gt;</span> and <span class="import" ;>&lt;embed&gt;</span>elements
+            </h3>
+        </li>
+    </ul>
+    <p>The <span class="import">object</span> and <span class="import">embed</span> element defines an embedded object
+        within an HTML document.</p>
+    <object width="28%" height="200px" data=https://www.mlcjapanese.co.jp/Download/40verbs.swf></object>
+
+    <script src="./script.js"></script>
+</body>
+
+
+</html>
